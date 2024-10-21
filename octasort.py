@@ -7,11 +7,34 @@ from datetime import datetime
 from pydub import AudioSegment
 import essentia
 import essentia.standard as ess
+import numpy as np  # Added numpy for spectral flatness calculation
 
 # Constants
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_FILE = os.path.join(SCRIPT_DIR, 'octasort_db.json')
 LOG_FILE = os.path.join(SCRIPT_DIR, 'octasort.log')
+
+# Define the key groups as per the specified order
+KEY_GROUPS = [
+    ['Cmaj', 'Amin'],
+    ['Gmaj', 'Emin'],
+    ['Dmaj', 'Bmin'],
+    ['Amaj', 'F#min'],
+    ['Emaj', 'C#min'],
+    ['Bmaj', 'G#min'],
+    ['F#maj', 'D#min'],
+    ['Dbmaj', 'Bbmin'],
+    ['Abmaj', 'Fmin'],
+    ['Ebmaj', 'Cmin'],
+    ['Bbmaj', 'Gmin'],
+    ['Fmaj', 'Dmin']
+]
+
+# Create a mapping from each key to its group number
+KEY_TO_GROUP = {}
+for group_num, group in enumerate(KEY_GROUPS, start=1):
+    for key in group:
+        KEY_TO_GROUP[key.lower()] = group_num  # Use lowercase for case-insensitive matching
 
 # Configure logging to both file and console
 logger = logging.getLogger()
@@ -33,21 +56,6 @@ console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.INFO)
 console_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
-
-# Map folder names to descriptors
-descriptor_mapping = {
-    'BASS': 'B',
-    'CHORD': 'C',
-    'CP': 'CP',
-    'FX': 'FX',
-    'HH': 'HH',
-    'INTRO': 'I',
-    'KICK': 'K',
-    'SYN': 'SYN',
-    'TOP': 'T',
-    'TRIBE': 'TRB',
-    'VOX': 'V'
-}
 
 # Supported audio file extensions
 audio_extensions = ('.wav', '.mp3', '.aif', '.aiff', '.flac', '.ogg')
@@ -130,24 +138,54 @@ def normalize_audio(audio):
     change_in_dBFS = target_dBFS - audio.max_dBFS
     return audio.apply_gain(change_in_dBFS)
 
-def extract_key(audio_file_path):
-    """Extract Key using Essentia."""
+def extract_key_and_tonality(audio_file_path):
+    """Extract Key and determine tonality using Spectral Flatness."""
     try:
         # Load audio using Essentia
         loader = ess.MonoLoader(filename=audio_file_path)
         audio = loader()
 
-        # Key extraction using KeyExtractor
-        key_extractor = ess.KeyExtractor()
-        key, scale, strength = key_extractor(audio)
+        # Frame the audio for analysis
+        frame_size = 2048
+        hop_size = 1024
+        spectral_flatness_vals = []
+        for frame in ess.FrameGenerator(audio, frameSize=frame_size, hopSize=hop_size, startFromZero=True):
+            windowed_frame = ess.Windowing(type='hann')(frame)
+            spectrum = ess.Spectrum()(windowed_frame)
+            # Check if spectrum has energy to avoid log(0)
+            if np.any(spectrum > 0):
+                geometric_mean = np.exp(np.mean(np.log(spectrum + 1e-12)))  # Add epsilon to avoid log(0)
+                arithmetic_mean = np.mean(spectrum)
+                spectral_flatness = geometric_mean / (arithmetic_mean + 1e-12)  # Avoid division by zero
+                spectral_flatness_vals.append(spectral_flatness)
+            else:
+                spectral_flatness_vals.append(0.0)  # If no energy, consider as highly tonal
 
-        # Condense scale (e.g., 'minor' -> 'min', 'major' -> 'maj')
-        scale_short = {'minor': 'min', 'major': 'maj'}.get(scale.lower(), scale)
+        # Compute average spectral flatness
+        avg_spectral_flatness = np.mean(spectral_flatness_vals)
 
-        # Combine key and condensed scale (e.g., 'Amin', 'Cmaj')
-        key_scale = f"{key}{scale_short}"
+        logging.info(f"Spectral Flatness for '{audio_file_path}': {avg_spectral_flatness}")
 
-        return key_scale
+        # Determine tonality based on spectral flatness
+        tonality_threshold = 0.1  # You can adjust this threshold
+        if avg_spectral_flatness < tonality_threshold:
+            is_tonal = True
+        else:
+            is_tonal = False
+
+        if is_tonal:
+            # Key extraction using KeyExtractor
+            key_extractor = ess.KeyExtractor()
+            key, scale, strength = key_extractor(audio)
+            # Condense scale (e.g., 'minor' -> 'min', 'major' -> 'maj')
+            scale_short = {'minor': 'min', 'major': 'maj'}.get(scale.lower(), scale)
+            # Combine key and condensed scale (e.g., 'Amin', 'Cmaj')
+            key_scale = f"{key}{scale_short}"
+            logging.info(f"Detected tonal sample. Extracted Key: {key_scale} with strength {strength}")
+            return key_scale
+        else:
+            logging.info(f"Detected non-tonal sample: '{audio_file_path}'")
+            return None  # Non-tonal sample
     except Exception as e:
         logging.error(f"Essentia key extraction failed for {audio_file_path}: {e}")
         return None
@@ -170,19 +208,12 @@ def main():
     db = load_db()
 
     # Process each descriptor folder
-    for folder_name, descriptor in descriptor_mapping.items():
+    for folder_name in os.listdir(root_dir):
         folder_path = os.path.join(root_dir, folder_name)
         if not os.path.isdir(folder_path):
-            logging.warning(f"Folder '{folder_name}' does not exist in the root directory.")
             continue
+        descriptor = folder_name  # Use folder name as descriptor
         logging.info(f"\nProcessing folder: {folder_name}")
-
-        # Decide whether to extract Key
-        if descriptor in ['B', 'C', 'SYN', 'FX', 'I']:
-            extract_key_flag = True
-            files_with_keys = []
-        else:
-            extract_key_flag = False
 
         # Collect all current audio files in the folder
         current_files = []
@@ -212,7 +243,7 @@ def main():
         files_to_process = []
         for filename in current_files:
             # Extract the original base filename (without prefix) if it has one
-            match = re.match(r'^(' + descriptor + r')\d+(_[A-Za-z#]+)?_(.+)', filename)
+            match = re.match(r'^(' + re.escape(descriptor) + r')\d+(_[A-Za-z#]+)?_(.+)', filename)
             if match:
                 original_base_with_ext = match.group(3)
             else:
@@ -226,27 +257,31 @@ def main():
                 ext = os.path.splitext(filename)[1]
             files_to_process.append((filename, original_base, ext))
 
-        # Extract keys for files that require it
-        if extract_key_flag:
-            files_with_keys = []
-            for filename, original_base, ext in files_to_process:
-                original_file_path = os.path.join(folder_path, filename)
-                key_scale = extract_key(original_file_path)
-                if key_scale is None:
-                    key_scale = "Unknown"
+        # Extract keys and detect tonality for files
+        files_with_keys = []
+        for filename, original_base, ext in files_to_process:
+            original_file_path = os.path.join(folder_path, filename)
+            key_scale = extract_key_and_tonality(original_file_path)
+            if key_scale is None:
+                key_scale_clean = None
+            else:
                 # Remove any problematic characters from key_scale
                 key_scale_clean = re.sub(r'[^\w#]+', '', key_scale)
-                files_with_keys.append((key_scale_clean, original_base, ext, filename))
-            # Sort files based on Circle of Fifths positions
-            files_with_keys.sort(key=lambda x: (
-                get_circle_of_fifths_position(get_root_note_and_scale(x[0])[0]),
-                get_root_note_and_scale(x[0])[1],  # Scale ('maj', 'min', etc.)
-                x[1]))  # Original base filename
-            sorted_files = files_with_keys
-        else:
-            # For descriptors without key extraction, sort alphabetically
-            files_with_keys = [(None, original_base, ext, filename) for filename, original_base, ext in files_to_process]
-            sorted_files = sorted(files_with_keys, key=lambda x: x[1])
+            files_with_keys.append((key_scale_clean, original_base, ext, filename))
+
+        # Define sort key function
+        def get_sort_key(item):
+            key_scale_clean, original_base, ext, filename = item
+            if key_scale_clean:
+                key_scale_clean_lower = key_scale_clean.lower()
+                group_num = KEY_TO_GROUP.get(key_scale_clean_lower, 100)  # Default to 100 if not found
+                return (0, group_num, key_scale_clean_lower, original_base)
+            else:
+                # Non-tonal samples are placed after tonal samples
+                return (1, original_base)
+
+        # Sort files
+        sorted_files = sorted(files_with_keys, key=get_sort_key)
 
         # Reindexing: Assign new indices based on sorted order
         for idx, (key_scale_clean, original_base, ext, filename) in enumerate(sorted_files, start=1):
@@ -259,7 +294,7 @@ def main():
 
             # Build the new filename
             new_filename = f"{descriptor}{idx}"
-            if extract_key_flag and key_scale_clean and key_scale_clean != "Unknown":
+            if key_scale_clean:
                 new_filename += f"_{key_scale_clean}"
             new_filename += f"_{original_base}{ext}"
 
@@ -308,7 +343,7 @@ def main():
                         'last_modified': file_mtime,
                         'descriptor': descriptor,
                         'index': idx,
-                        'key': key_scale_clean if extract_key_flag else None
+                        'key': key_scale_clean if key_scale_clean else None
                     }
                     # Remove old db entry if filename changed
                     if filename != new_filename and filename in db_folder:
