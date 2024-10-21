@@ -9,6 +9,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
+- [File Renaming Structure](#file-renaming-structure)
 - [Logging](#logging)
 - [Database](#database)
 - [Supported Audio Formats](#supported-audio-formats)
@@ -32,7 +33,8 @@
 Before installing OctaSort, ensure that your system meets the following requirements:
 
 - **Operating System:** Compatible with Windows, macOS, and Linux.
-- **Python:** Version 3.7 or higher.
+- **Python:** Version **3.11**.
+- **Python Packages:** Ensure that `numpy` version **1.26** is installed.
 
 ## Installation
 
@@ -103,7 +105,7 @@ Suppose you have a directory structure like:
 │   └── ...
 ├── Descriptor2
 │   ├── sample3.flac
-│   ├── sanple4.ogg
+│   ├── sample4.ogg
 │   └── ...
 └── ...
 ```
@@ -151,6 +153,44 @@ tonality_threshold = 0.1  # Adjust as needed
 
 A lower threshold makes the script more stringent in classifying files as tonal.
 
+## File Renaming Structure
+
+OctaSort employs a systematic file renaming convention to ensure consistency and ease of navigation within your audio library. The renaming structure follows this pattern:
+
+```
+{Descriptor}{Index}_{Key}_{OriginalName}{Extension}
+```
+
+### Components:
+
+- **Descriptor:** The name of the folder containing the audio file. This helps in categorizing files based on their descriptors.
+  
+- **Index:** A numerical value assigned based on the sorted order of the files within the descriptor folder. This ensures that files are organized sequentially.
+
+- **Key:** The detected musical key and scale of the audio file (e.g., `Cmaj` for C major or `Amin` for A minor). If the file is non-tonal, this part is omitted.
+
+- **OriginalName:** The original name of the audio file before processing. This maintains the identity of the file.
+
+- **Extension:** The original file extension (e.g., `.mp3`, `.wav`).
+
+### Example:
+
+Given a descriptor folder named `Descriptor1` containing a file `song1.mp3` detected to be in C major, the renamed file would be:
+
+```
+Descriptor11_Cmaj_song1.mp3
+```
+
+If another file `song2.wav` is detected to be non-tonal, it would be renamed as:
+
+```
+Descriptor12_song2.wav
+```
+
+### Handling Conflicts:
+
+If a target filename already exists, OctaSort logs the conflict and skips renaming the problematic file to prevent data loss or overwriting. Ensure that your descriptor names and indices are unique to minimize conflicts.
+
 ## Logging
 
 OctaSort generates a log file named `octasort.log` in the script's directory. This log records all operations, including:
@@ -169,7 +209,7 @@ OctaSort generates a log file named `octasort.log` in the script's directory. Th
 Processing folder: Descriptor1
 2024-04-27 10:15:32,789 - INFO - Spectral Flatness for '/MusicLibrary/Descriptor1/song1.mp3': 0.05
 2024-04-27 10:15:32,790 - INFO - Detected tonal sample. Extracted Key: Cmaj with strength 0.8
-2024-04-27 10:15:33,012 - INFO - Processed and renamed to: Cmaj_1_song1.mp3
+2024-04-27 10:15:33,012 - INFO - Processed and renamed to: Descriptor11_Cmaj_song1.mp3
 ...
 2024-04-27 10:20:45,678 - INFO - Database saved successfully to /path/to/octasort_db.json.
 2024-04-27 10:20:45,679 - INFO - 
@@ -192,9 +232,9 @@ OctaSort maintains a JSON database file named `octasort_db.json` in the script's
 ```json
 {
     "Descriptor1": {
-        "Cmaj_1_song1.mp3": {
+        "Descriptor11_Cmaj_song1.mp3": {
             "original_name": "song1.mp3",
-            "new_filename": "Cmaj_1_song1.mp3",
+            "new_filename": "Descriptor11_Cmaj_song1.mp3",
             "last_modified": 1619472000.0,
             "descriptor": "Descriptor1",
             "index": 1,
