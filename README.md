@@ -1,6 +1,6 @@
 # OctaSort
 
-OctaSort is a Python script designed to organize, process, and normalize audio files in a structured directory. It renames audio files according to a specific pattern, extracts musical keys for certain types of audio files, normalizes audio levels, and maintains a database to track processed files.
+**OctaSort** is a Python script designed to organize and manage your audio library efficiently. It automatically analyzes audio files to determine their musical key and tonality, normalizes their volume, and renames them systematically based on their key and other metadata. Additionally, OctaSort maintains a JSON-based database to track processed files, ensuring consistent and reliable organization over time.
 
 ## Table of Contents
 
@@ -8,148 +8,258 @@ OctaSort is a Python script designed to organize, process, and normalize audio f
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Directory Structure](#directory-structure)
-- [File Naming Convention](#file-naming-convention)
-- [Logging and Database](#logging-and-database)
+- [Configuration](#configuration)
+- [Logging](#logging)
+- [Database](#database)
+- [Supported Audio Formats](#supported-audio-formats)
+- [Error Handling](#error-handling)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
 
-- **Automatic File Renaming**: Renames audio files based on their descriptor, index, and musical key (if applicable).
-- **Key Extraction**: Extracts the musical key of audio files using Essentia for specific descriptors.
-- **Audio Normalization**: Normalizes audio files to -3 dBFS using pydub.
-- **Database Management**: Keeps track of processed files in a JSON database to prevent redundant processing.
-- **Logging**: Logs processing steps and errors to both console and a log file.
+- **Musical Key Detection:** Utilizes the Essentia library to extract the key and scale (major/minor) of each audio file.
+- **Tonality Assessment:** Determines the tonality of audio files using spectral flatness to differentiate between tonal and non-tonal samples.
+- **Automated Renaming:** Renames audio files based on their detected key, ensuring a consistent naming convention.
+- **Volume Normalization:** Normalizes audio files to a target loudness (-3.0 dBFS) to maintain consistent playback levels.
+- **Database Management:** Maintains a JSON database (`octasort_db.json`) to track processed files, their metadata, and changes over time.
+- **Logging:** Provides detailed logs (`octasort.log`) of all operations, including processing steps, errors, and actions taken.
+- **Conflict Resolution:** Detects and handles filename conflicts to prevent data loss or overwriting.
+- **Support for Multiple Audio Formats:** Compatible with various audio file types, including WAV, MP3, AIFF, FLAC, and OGG.
 
 ## Prerequisites
 
-- **Python 3.6 or higher**
-- **ffmpeg**: Required by pydub for audio processing.
-- **Essentia**: For musical key extraction.
-- **pydub**: For audio normalization and processing.
+Before installing OctaSort, ensure that your system meets the following requirements:
+
+- **Operating System:** Compatible with Windows, macOS, and Linux.
+- **Python:** Version 3.7 or higher.
 
 ## Installation
 
-1. **Install ffmpeg**
+1. **Clone the Repository:**
 
-   - **Windows**: Download from [ffmpeg.org](https://ffmpeg.org/download.html#build-windows) and add it to your PATH.
-   - **macOS**: Install via Homebrew:
+   ```bash
+   git clone https://github.com/yourusername/octasort.git
+   cd octasort
+   ```
+
+2. **Create a Virtual Environment (Optional but Recommended):**
+
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install Required Python Packages:**
+
+   OctaSort relies on several Python libraries. Install them using `pip`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   **`requirements.txt`** should include:
+
+   ```plaintext
+   numpy
+   pydub
+   essentia
+   ```
+
+4. **Install FFmpeg:**
+
+   OctaSort uses FFmpeg for audio processing. Download and install FFmpeg from [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html).
+
+   - **Windows:** Add FFmpeg to your system's PATH.
+   - **macOS:** You can install via Homebrew:
+
      ```bash
      brew install ffmpeg
      ```
-   - **Linux**: Install via package manager:
+
+   - **Linux:** Install via your distribution's package manager, e.g., for Debian/Ubuntu:
+
      ```bash
      sudo apt-get install ffmpeg
      ```
 
-2. **Install Python Packages**
-
-   ```bash
-   pip install pydub essentia
-   ```
-
-   **Note**: Essentia might require additional dependencies. Refer to the [Essentia installation guide](https://essentia.upf.edu/installing.html) for detailed instructions.
-
 ## Usage
+
+Run OctaSort by specifying the root directory containing your audio files organized into descriptor folders.
 
 ```bash
 python3 octasort.py /path/to/root_directory
 ```
 
-- Replace `/path/to/root_directory` with the path to your root directory containing audio folders.
+### Example
 
-## Directory Structure
-
-Your root directory should contain folders named according to the descriptors in the script. The default descriptor mapping is:
-
-- `BASS`: `B`
-- `CHORD`: `C`
-- `CP`: `CP`
-- `FX`: `FX`
-- `HH`: `HH`
-- `INTRO`: `I`
-- `KICK`: `K`
-- `SYN`: `SYN`
-- `TOP`: `T`
-- `TRIBE`: `TRB`
-- `VOX`: `V`
-
-**Example:**
+Suppose you have a directory structure like:
 
 ```
-/path/to/root_directory/
-├── BASS/
-├── CHORD/
-├── CP/
-├── FX/
-├── HH/
-├── INTRO/
-├── KICK/
-├── SYN/
-├── TOP/
-├── TRIBE/
-└── VOX/
+/SampleLibrary
+├── Descriptor1
+│   ├── song1.mp3
+│   ├── song2.wav
+│   └── ...
+├── Descriptor2
+│   ├── track1.flac
+│   ├── track2.ogg
+│   └── ...
+└── ...
 ```
 
-Place your audio files inside the corresponding descriptor folders.
+Run OctaSort as follows:
 
-## File Naming Convention
-
-After processing, files will be renamed using the following pattern:
-
-```
-<DESCRIPTOR><INDEX>_<KEY>_<ORIGINAL_FILENAME><EXTENSION>
+```bash
+python3 octasort.py /MusicLibrary
 ```
 
-- `<DESCRIPTOR>`: Descriptor code (e.g., `B`, `C`, `HH`).
-- `<INDEX>`: Numerical index based on sorting.
-- `<KEY>`: Musical key (if extracted; descriptors `B`, `C`, `SYN`, `FX`, `INTRO` only).
-- `<ORIGINAL_FILENAME>`: Original base filename.
-- `<EXTENSION>`: Original file extension.
+OctaSort will process each descriptor folder (`Descriptor1`, `Descriptor2`, etc.), analyze the audio files, normalize them, and rename them based on their detected key and other metadata.
 
-**Examples:**
+## Configuration
 
-- `B1_Cmaj_MyBassline.wav`
-- `HH3_MyHiHatLoop.wav`
-- `SYN2_Dmin_SynthChord.aiff`
+### Key Groups
 
-## Logging and Database
+OctaSort organizes keys based on predefined groups aligned with the Circle of Fifths. The script defines these groups in a specific order to facilitate consistent sorting and renaming.
 
-- **Log File**: `octasort.log` is created in the script's directory. It contains detailed logs of the processing steps.
-- **Database File**: `octasort_db.json` stores metadata of processed files to prevent redundant processing.
+```python
+KEY_GROUPS = [
+    ['Cmaj', 'Amin'],
+    ['Gmaj', 'Emin'],
+    ['Dmaj', 'Bmin'],
+    ['Amaj', 'F#min'],
+    ['Emaj', 'C#min'],
+    ['Bmaj', 'G#min'],
+    ['F#maj', 'D#min'],
+    ['Dbmaj', 'Bbmin'],
+    ['Abmaj', 'Fmin'],
+    ['Ebmaj', 'Cmin'],
+    ['Bbmaj', 'Gmin'],
+    ['Fmaj', 'Dmin']
+]
+```
 
-## How It Works
+You can modify these groups or add new ones as needed to fit your organizational preferences.
 
-1. **Initialization**: The script loads or creates a JSON database and sets up logging.
-2. **Folder Processing**: Iterates over each descriptor folder in the root directory.
-3. **File Collection**: Collects all audio files with supported extensions.
-4. **Key Extraction**: For specific descriptors, extracts the musical key using Essentia.
-5. **Sorting**: Sorts files based on the Circle of Fifths and filename.
-6. **Renaming and Normalization**:
-   - Renames files according to the naming convention.
-   - Normalizes audio levels to -3 dBFS.
-   - Updates the database with the new file information.
-7. **Database Update**: Saves the updated database to `octasort_db.json`.
-8. **Logging**: Records all actions and any errors encountered.
+### Tonality Threshold
+
+The tonality threshold determines whether an audio file is considered tonal or non-tonal based on its spectral flatness.
+
+```python
+tonality_threshold = 0.1  # Adjust as needed
+```
+
+A lower threshold makes the script more stringent in classifying files as tonal.
+
+## Logging
+
+OctaSort generates a log file named `octasort.log` in the script's directory. This log records all operations, including:
+
+- Start and completion of processing.
+- Files being processed, skipped, or renamed.
+- Errors encountered during processing.
+- Database load and save operations.
+
+**Example Log Entry:**
+
+```
+2024-04-27 10:15:30,123 - INFO - Loaded database from /path/to/octasort_db.json.
+2024-04-27 10:15:30,124 - INFO - Starting octasort with root directory: /MusicLibrary
+2024-04-27 10:15:31,456 - INFO - 
+Processing folder: Descriptor1
+2024-04-27 10:15:32,789 - INFO - Spectral Flatness for '/MusicLibrary/Descriptor1/song1.mp3': 0.05
+2024-04-27 10:15:32,790 - INFO - Detected tonal sample. Extracted Key: Cmaj with strength 0.8
+2024-04-27 10:15:33,012 - INFO - Processed and renamed to: Cmaj_1_song1.mp3
+...
+2024-04-27 10:20:45,678 - INFO - Database saved successfully to /path/to/octasort_db.json.
+2024-04-27 10:20:45,679 - INFO - 
+Processing complete.
+```
+
+## Database
+
+OctaSort maintains a JSON database file named `octasort_db.json` in the script's directory. This database tracks information about each processed file, including:
+
+- **Original Name:** The original filename before processing.
+- **New Filename:** The new, standardized filename after processing.
+- **Last Modified:** Timestamp of the last modification to the file.
+- **Descriptor:** The descriptor folder the file belongs to.
+- **Index:** The assigned index based on sorting.
+- **Key:** Detected musical key and scale.
+
+**Sample Database Entry:**
+
+```json
+{
+    "Descriptor1": {
+        "Cmaj_1_song1.mp3": {
+            "original_name": "song1.mp3",
+            "new_filename": "Cmaj_1_song1.mp3",
+            "last_modified": 1619472000.0,
+            "descriptor": "Descriptor1",
+            "index": 1,
+            "key": "cmaj"
+        },
+        ...
+    },
+    ...
+}
+```
+
+This database allows OctaSort to detect changes in your audio library, such as added or deleted files, and act accordingly in subsequent runs.
 
 ## Supported Audio Formats
 
-- WAV
-- MP3
-- AIFF
-- FLAC
-- OGG
+OctaSort supports the following audio file formats:
+
+- **WAV (`.wav`)**
+- **MP3 (`.mp3`)**
+- **AIFF (`.aif`, `.aiff`)**
+- **FLAC (`.flac`)**
+- **OGG (`.ogg`)**
+
+Ensure that your audio files have the correct extensions to be recognized and processed by OctaSort.
 
 ## Error Handling
 
-- **Unsupported Formats**: Skips files with unsupported formats.
-- **File Conflicts**: Logs errors if a naming conflict occurs and skips the file.
-- **Missing Dependencies**: Logs and exits if required dependencies are missing.
+OctaSort includes comprehensive error handling to manage potential issues during processing:
+
+- **Database Errors:** Issues with loading or saving the JSON database are logged.
+- **Audio Processing Errors:** Failures in loading or analyzing audio files are logged with details.
+- **Filename Conflicts:** If a target filename already exists, the conflict is logged, and the file is skipped to prevent overwriting.
+- **File System Errors:** Problems with file access, such as permission issues or missing files, are logged.
+
+Review the `octasort.log` file to identify and resolve any errors encountered during processing.
+
+## Contributing
+
+Contributions are welcome! If you encounter issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+1. **Fork the Repository**
+2. **Create a Feature Branch**
+
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+
+3. **Commit Your Changes**
+
+   ```bash
+   git commit -m "Add your feature"
+   ```
+
+4. **Push to the Branch**
+
+   ```bash
+   git push origin feature/YourFeature
+   ```
+
+5. **Open a Pull Request**
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-**Disclaimer**: Use this script at your own risk. Always back up your files before processing.
+*Happy Sorting! 🎵*

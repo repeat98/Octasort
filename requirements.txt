@@ -1,0 +1,3 @@
+pydub
+essentia
+numpy==1.26
