@@ -1,0 +1,564 @@
+2024-10-21 20:05:29,849 - INFO - Starting octasort with root directory: /Users/jannikassfalg/Music/Octa -3/Lehmann/AUDIO/LIVESET Ulm Kopie
+2024-10-21 20:05:29,849 - INFO - No existing database found. Starting with an empty database.
+2024-10-21 20:05:29,849 - INFO - 
+Processing folder: BASS
+2024-10-21 20:05:30,227 - INFO -     Processed and renamed to: B1_Cmin_28 AT Hypnosis Bass - Version 137 C.wav
+2024-10-21 20:05:30,229 - INFO -     Processed and renamed to: B2_Cmin_89 SMPERCBOUNCE.wav
+2024-10-21 20:05:30,231 - INFO -     Processed and renamed to: B3_Cmin_Bassline Sine Melo.wav
+2024-10-21 20:05:30,234 - INFO -     Processed and renamed to: B4_Gmaj_14 AT Hypnosis Bass - Bump 137 G.wav
+2024-10-21 20:05:30,237 - INFO -     Processed and renamed to: B5_Gmaj_24 AT Hypnosis Bass - Peak 137 G.wav
+2024-10-21 20:05:30,239 - INFO -     Processed and renamed to: B6_Gmaj_33 AT Hypnosis Bass - Inverted 137 G.wav
+2024-10-21 20:05:30,241 - INFO -     Processed and renamed to: B7_Gmaj_Bassloop G.wav
+2024-10-21 20:05:30,250 - INFO -     Processed and renamed to: B8_Gmin_31 AT Hypnosis Bass - Warehouse 137 G.wav
+2024-10-21 20:05:30,253 - INFO -     Processed and renamed to: B9_Dmin_Bleep bass.wav
+2024-10-21 20:05:30,257 - INFO -     Processed and renamed to: B10_Dmin_Sounddesign Bass.wav
+2024-10-21 20:05:30,260 - INFO -     Processed and renamed to: B11_Amaj_13 AT Hypnosis Bass - Dope 137 A.wav
+2024-10-21 20:05:30,260 - INFO -     Processed and renamed to: B12_Amin_SM_BASSLINE003_A.wav
+2024-10-21 20:05:30,264 - INFO -     Processed and renamed to: B13_Emin_Bass sequence ? Tröster Style.wav
+2024-10-21 20:05:30,265 - INFO -     Processed and renamed to: B14_Emin_Bass_Mono.wav
+2024-10-21 20:05:30,268 - INFO -     Processed and renamed to: B15_Bmaj_29 AT Hypnosis Bass - False 137 B.wav
+2024-10-21 20:05:30,270 - INFO -     Processed and renamed to: B16_Bmaj_909 Toms.wav
+2024-10-21 20:05:30,272 - INFO -     Processed and renamed to: B17_Bmaj_Bass Loop Tino.wav
+2024-10-21 20:05:30,274 - INFO -     Processed and renamed to: B18_F#min_Bass Loop X.wav
+2024-10-21 20:05:30,277 - INFO -     Processed and renamed to: B19_F#min_Dubhausen_Bass.wav
+2024-10-21 20:05:30,387 - INFO -     Processed and renamed to: B20_F#min_Sine.aif
+2024-10-21 20:05:30,388 - INFO -     Processed and renamed to: B21_C#min_Really good bassline.wav
+2024-10-21 20:05:30,390 - INFO -     Processed and renamed to: B22_Abmaj_blabla_bass.wav
+2024-10-21 20:05:30,393 - INFO -     Processed and renamed to: B23_Abmin_Bass Rythm.wav
+2024-10-21 20:05:30,398 - INFO -     Processed and renamed to: B24_Ebmaj_90s_Bass.wav
+2024-10-21 20:05:30,401 - INFO -     Processed and renamed to: B25_Ebmaj_Basssequenz.wav
+2024-10-21 20:05:30,403 - INFO -     Processed and renamed to: B26_Bbmaj_07 AT Hypnosis Bass - Glider 137 F#.wav
+2024-10-21 20:05:30,405 - INFO -     Processed and renamed to: B27_Bbmin_Funky Bass.wav
+2024-10-21 20:05:30,410 - INFO -     Processed and renamed to: B28_Fmaj_Bass Loop 5.wav
+2024-10-21 20:05:30,413 - INFO -     Processed and renamed to: B29_Fmaj_Basstom.wav
+2024-10-21 20:05:30,415 - INFO -     Processed and renamed to: B30_Fmin_Bassline Watson.wav
+2024-10-21 20:05:30,415 - INFO - 
+Processing folder: CHORD
+2024-10-21 20:05:31,068 - INFO -     Processed and renamed to: C1_Cmin_06 AT Hypnosis Chord - Klock 137 Cm.wav
+2024-10-21 20:05:31,070 - INFO -     Processed and renamed to: C2_Cmin_08 AT Hypnosis Chord - Damage 137 Dm.wav
+2024-10-21 20:05:31,075 - INFO -     Processed and renamed to: C3_Cmin_14 AT Hypnosis Chord - Waldorf 137 Cm.wav
+2024-10-21 20:05:31,077 - INFO -     Processed and renamed to: C4_Cmin_Chord Loop Dub.wav
+2024-10-21 20:05:31,079 - INFO -     Processed and renamed to: C5_Cmin_Midnight Snack.wav
+2024-10-21 20:05:31,083 - INFO -     Processed and renamed to: C6_Gmaj_Inject Chord.wav
+2024-10-21 20:05:31,086 - INFO -     Processed and renamed to: C7_Gmin_15 AT Hypnosis Chord - Blocked 137 F#.wav
+2024-10-21 20:05:31,090 - INFO -     Processed and renamed to: C8_Gmin_21 AT Hypnosis Chord - Atmospheric 137 Gm.wav
+2024-10-21 20:05:31,152 - INFO -     Processed and renamed to: C9_Gmin_where's the bar synthline.wav
+2024-10-21 20:05:31,199 - INFO -     Processed and renamed to: C10_Amaj_Repair Stuff Chords.wav
+2024-10-21 20:05:31,218 - INFO -     Processed and renamed to: C11_Amaj_dublesson chord.wav
+2024-10-21 20:05:31,237 - INFO -     Processed and renamed to: C12_Bmin_Affekt Chord.wav
+2024-10-21 20:05:31,246 - INFO -     Processed and renamed to: C13_Bmin_FFS Chord Loop 2.wav
+2024-10-21 20:05:31,251 - INFO -     Processed and renamed to: C14_Bmin_Piano Loop.wav
+2024-10-21 20:05:31,255 - INFO -     Processed and renamed to: C15_F#min_Chord Final.wav
+2024-10-21 20:05:31,258 - INFO -     Processed and renamed to: C16_F#min_Chord Loop 4.wav
+2024-10-21 20:05:31,295 - INFO -     Processed and renamed to: C17_C#min_Dubhausen_Chord.wav
+2024-10-21 20:05:31,299 - INFO -     Processed and renamed to: C18_Abmin_House_Base.wav
+2024-10-21 20:05:31,301 - INFO -     Processed and renamed to: C19_Ebmin_Chord Broom.wav
+2024-10-21 20:05:31,309 - INFO -     Processed and renamed to: C20_Ebmin_Dub Chordline.wav
+2024-10-21 20:05:31,311 - INFO -     Processed and renamed to: C21_Bbmaj_24 AT Hypnosis Chord - Esoteric 137 A#.wav
+2024-10-21 20:05:31,313 - INFO -     Processed and renamed to: C22_Fmin_03 AT Hypnosis Chord - Deeper 137 Cm.wav
+2024-10-21 20:05:31,313 - INFO - 
+Processing folder: CP
+2024-10-21 20:05:31,318 - INFO -     Processed and renamed to: CP1_- 91 Clap A.wav
+2024-10-21 20:05:31,320 - INFO -     Processed and renamed to: CP2_- 92 Clap B.wav
+2024-10-21 20:05:31,322 - INFO -     Processed and renamed to: CP3_- 93 Clap C.wav
+2024-10-21 20:05:31,335 - INFO -     Processed and renamed to: CP4_Clap 1.wav
+2024-10-21 20:05:31,338 - INFO -     Processed and renamed to: CP5_Clap Filtered.wav
+2024-10-21 20:05:31,342 - INFO -     Processed and renamed to: CP6_Clap Loop.wav
+2024-10-21 20:05:31,348 - INFO -     Processed and renamed to: CP7_Clap707.wav
+2024-10-21 20:05:31,360 - INFO -     Processed and renamed to: CP8_Sesh Gmünd 5-Instrument Rack.wav
+2024-10-21 20:05:31,362 - INFO -     Processed and renamed to: CP9_Skee Clap 909 [2024-09-28 160200].wav
+2024-10-21 20:05:31,362 - INFO - 
+Processing folder: FX
+2024-10-21 20:05:32,811 - INFO -     Processed and renamed to: FX1_Cmaj_FX 5.wav
+2024-10-21 20:05:32,813 - INFO -     Processed and renamed to: FX2_Cmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 22 SM_FXLOWTEXTURE.wav
+2024-10-21 20:05:32,840 - INFO -     Processed and renamed to: FX3_Cmin_FFS Chord FX.wav
+2024-10-21 20:05:32,854 - INFO -     Processed and renamed to: FX4_Cmin_FX 3.wav
+2024-10-21 20:05:32,857 - INFO -     Processed and renamed to: FX5_Cmin_PHS TEXTURE 13_138.wav
+2024-10-21 20:05:32,858 - INFO -     Processed and renamed to: FX6_Cmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 17 SM_FX001.wav
+2024-10-21 20:05:32,863 - INFO -     Processed and renamed to: FX7_Cmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 23 SM_FX_SINERISE.wav
+2024-10-21 20:05:32,865 - INFO -     Processed and renamed to: FX8_Cmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 67 SM_Atmos.wav
+2024-10-21 20:05:32,869 - INFO -     Processed and renamed to: FX9_Cmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 68 SM_Atmos003.wav
+2024-10-21 20:05:32,871 - INFO -     Processed and renamed to: FX10_Cmin_fffx.wav
+2024-10-21 20:05:32,873 - INFO -     Processed and renamed to: FX11_Gmaj_PHS TEXTURE 18_138.wav
+2024-10-21 20:05:32,876 - INFO -     Processed and renamed to: FX12_Gmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 21 SM_FXLOWDROVE.wav
+2024-10-21 20:05:32,879 - INFO -     Processed and renamed to: FX13_Gmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 71 SM_Atmosharmony.wav
+2024-10-21 20:05:32,894 - INFO -     Processed and renamed to: FX14_Gmin_BreakStuff chord .wav
+2024-10-21 20:05:32,909 - INFO -     Processed and renamed to: FX15_Gmin_BreakStuff chord variante 2.wav
+2024-10-21 20:05:32,916 - INFO -     Processed and renamed to: FX16_Gmin_Electricity.wav
+2024-10-21 20:05:32,930 - INFO -     Processed and renamed to: FX17_Gmin_FX 2.wav
+2024-10-21 20:05:32,960 - INFO -     Processed and renamed to: FX18_Gmin_INTRO.wav
+2024-10-21 20:05:32,962 - INFO -     Processed and renamed to: FX19_Gmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 19 SM_FX003.wav
+2024-10-21 20:05:32,968 - INFO -     Processed and renamed to: FX20_Gmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 70 SM_Atmosglitch001.wav
+2024-10-21 20:05:32,993 - INFO -     Processed and renamed to: FX21_Dmaj_Chord FX.wav
+2024-10-21 20:05:32,995 - INFO -     Processed and renamed to: FX22_Dmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 26 SM_FX004.wav
+2024-10-21 20:05:33,003 - INFO -     Processed and renamed to: FX23_Dmin_PHS TEXTURE 6_138.wav
+2024-10-21 20:05:33,009 - INFO -     Processed and renamed to: FX24_Amaj_PHS TEXTURE 17_138.wav
+2024-10-21 20:05:33,018 - INFO -     Processed and renamed to: FX25_Amaj_pad.wav
+2024-10-21 20:05:33,027 - INFO -     Processed and renamed to: FX26_Amin_PHS TEXTURE 7_138.wav
+2024-10-21 20:05:33,029 - INFO -     Processed and renamed to: FX27_Amin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 18 SM_FX002.wav
+2024-10-21 20:05:33,065 - INFO -     Processed and renamed to: FX28_Emaj_FX_1.wav
+2024-10-21 20:05:33,067 - INFO -     Processed and renamed to: FX29_Emin_New Atmo.wav
+2024-10-21 20:05:33,096 - INFO -     Processed and renamed to: FX30_Emin_fff pad.wav
+2024-10-21 20:05:33,101 - INFO -     Processed and renamed to: FX31_Bmaj_Machine Junk FX.wav
+2024-10-21 20:05:33,120 - INFO -     Processed and renamed to: FX32_Bmaj_atmo.wav
+2024-10-21 20:05:33,129 - INFO -     Processed and renamed to: FX33_Bmin_Atmo Pakard.wav
+2024-10-21 20:05:33,137 - INFO -     Processed and renamed to: FX34_F#maj_PHS TEXTURE 20_138.wav
+2024-10-21 20:05:33,258 - INFO -     Processed and renamed to: FX35_F#maj_Selenity Stems 10-Wavetable [2023-03-23 155724].aif
+2024-10-21 20:05:33,268 - INFO -     Processed and renamed to: FX36_F#min_PHS TEXTURE 3_138.wav
+2024-10-21 20:05:33,272 - INFO -     Processed and renamed to: FX37_C#maj_Chord FX Loop.wav
+2024-10-21 20:05:33,389 - INFO -     Processed and renamed to: FX38_C#min_Selenity Stems 11-Omnisphere [2023-03-23 155751].aif
+2024-10-21 20:05:33,405 - INFO -     Processed and renamed to: FX39_Abmaj_FX 1.wav
+2024-10-21 20:05:33,415 - INFO -     Processed and renamed to: FX40_Ebmaj_PHS TEXTURE 10_138.wav
+2024-10-21 20:05:33,417 - INFO -     Processed and renamed to: FX41_Ebmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 25 SM_texture.wav
+2024-10-21 20:05:33,432 - INFO -     Processed and renamed to: FX42_Bbmaj_FX 4.wav
+2024-10-21 20:05:33,441 - INFO -     Processed and renamed to: FX43_Bbmaj_PHS TEXTURE 8_138.wav
+2024-10-21 20:05:33,443 - INFO -     Processed and renamed to: FX44_Bbmin_PHS TEXTURE 19_138.wav
+2024-10-21 20:05:33,452 - INFO -     Processed and renamed to: FX45_Bbmin_PHS TEXTURE 2_138.wav
+2024-10-21 20:05:33,462 - INFO -     Processed and renamed to: FX46_Bbmin_PHS TEXTURE 9_138.wav
+2024-10-21 20:05:33,470 - INFO -     Processed and renamed to: FX47_Fmaj_PHS TEXTURE 5_138.wav
+2024-10-21 20:05:33,479 - INFO -     Processed and renamed to: FX48_Fmaj_Sesh Gmünd 10-Omnisphere.wav
+2024-10-21 20:05:33,483 - INFO -     Processed and renamed to: FX49_Fmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 20 SM_FXHIGHCRACK.wav
+2024-10-21 20:05:33,486 - INFO -     Processed and renamed to: FX50_Fmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 24 SM_FXTAPENOISE001.wav
+2024-10-21 20:05:33,488 - INFO -     Processed and renamed to: FX51_Fmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 69 SM_Atmosdarkrich.wav
+2024-10-21 20:05:33,496 - INFO -     Processed and renamed to: FX52_Fmin_Pad_JALS.wav
+2024-10-21 20:05:33,496 - INFO - 
+Processing folder: HH
+2024-10-21 20:05:33,501 - INFO -     Processed and renamed to: HH1_- 31 SM_HHLOOP005.wav
+2024-10-21 20:05:33,504 - INFO -     Processed and renamed to: HH2_- 32 SM_HHLOOP006.wav
+2024-10-21 20:05:33,507 - INFO -     Processed and renamed to: HH3_- 35 SM_HHLOOP009.wav
+2024-10-21 20:05:33,509 - INFO -     Processed and renamed to: HH4_- 37 SM_HHLOOP011.wav
+2024-10-21 20:05:33,510 - INFO -     Processed and renamed to: HH5_- 38 SM_RIDELOOP001.wav
+2024-10-21 20:05:33,515 - INFO -     Processed and renamed to: HH6_AHH.wav
+2024-10-21 20:05:33,519 - INFO -     Processed and renamed to: HH7_Affekt Hihats.wav
+2024-10-21 20:05:33,531 - INFO -     Processed and renamed to: HH8_Dirty OH.wav
+2024-10-21 20:05:33,535 - INFO -     Processed and renamed to: HH9_Machine Junk Hihats.wav
+2024-10-21 20:05:33,638 - INFO -     Processed and renamed to: HH10_hihat loop swing.aif
+2024-10-21 20:05:33,638 - INFO - 
+Processing folder: INTRO
+2024-10-21 20:05:33,893 - INFO -     Processed and renamed to: I1_Cmin_timestretch_intro.wav
+2024-10-21 20:05:33,941 - INFO -     Processed and renamed to: I2_Amin_Tom Intro.wav
+2024-10-21 20:05:33,962 - INFO -     Processed and renamed to: I3_Emin_fffintro_transient compressed.wav
+2024-10-21 20:05:33,962 - INFO - 
+Processing folder: KICK
+2024-10-21 20:05:33,967 - INFO -     Processed and renamed to: K1_Kick 10.wav
+2024-10-21 20:05:33,968 - INFO -     Processed and renamed to: K2_Kick 2.wav
+2024-10-21 20:05:33,970 - INFO -     Processed and renamed to: K3_Kick 3.wav
+2024-10-21 20:05:33,977 - INFO -     Processed and renamed to: K4_Kick 4.wav
+2024-10-21 20:05:33,979 - INFO -     Processed and renamed to: K5_Kick 5.wav
+2024-10-21 20:05:33,981 - INFO -     Processed and renamed to: K6_Kick 6.wav
+2024-10-21 20:05:33,983 - INFO -     Processed and renamed to: K7_Kick 9 .wav
+2024-10-21 20:05:33,986 - INFO -     Processed and renamed to: K8_Kick G.wav
+2024-10-21 20:05:33,988 - INFO -     Processed and renamed to: K9_Kick Mende.wav
+2024-10-21 20:05:33,989 - INFO -     Processed and renamed to: K10_Kick2.wav
+2024-10-21 20:05:33,991 - INFO -     Processed and renamed to: K11_Kick_JALS.wav
+2024-10-21 20:05:33,992 - INFO -     Processed and renamed to: K12_PHS 909 CLEAN.wav
+2024-10-21 20:05:33,994 - INFO -     Processed and renamed to: K13_PHS 909 CLEAN 2.wav
+2024-10-21 20:05:33,996 - INFO -     Processed and renamed to: K14_PHS 909 CRUNCHY.wav
+2024-10-21 20:05:33,997 - INFO -     Processed and renamed to: K15_PHS 909 DISTO.wav
+2024-10-21 20:05:33,998 - INFO -     Processed and renamed to: K16_PHS 909 TAPE 1.wav
+2024-10-21 20:05:33,998 - INFO -     Processed and renamed to: K17_PHS 909 TAPE 2.wav
+2024-10-21 20:05:33,999 - INFO -     Processed and renamed to: K18_PHS 909 TAPE 3.wav
+2024-10-21 20:05:33,999 - INFO -     Processed and renamed to: K19_PHS 909 TAPE 4.wav
+2024-10-21 20:05:34,000 - INFO -     Processed and renamed to: K20_PHS BOOMY.wav
+2024-10-21 20:05:34,001 - INFO -     Processed and renamed to: K21_PHS TAPE.wav
+2024-10-21 20:05:34,004 - INFO -     Processed and renamed to: K22_Pakard Kick.wav
+2024-10-21 20:05:34,007 - INFO -     Processed and renamed to: K23_Short 808 Loop.wav
+2024-10-21 20:05:34,007 - INFO - 
+Processing folder: SYN
+2024-10-21 20:05:34,384 - INFO -     Processed and renamed to: SYN1_Gmaj_Synth.wav
+2024-10-21 20:05:34,386 - INFO -     Processed and renamed to: SYN2_Gmin_Machine Junk Groove.wav
+2024-10-21 20:05:34,387 - INFO -     Processed and renamed to: SYN3_Emin_Relief_Synth.wav
+2024-10-21 20:05:34,390 - INFO -     Processed and renamed to: SYN4_Bmin_Mohem groove.wav
+2024-10-21 20:05:34,392 - INFO -     Processed and renamed to: SYN5_Bmin_Tino New Sequenz No 5.wav
+2024-10-21 20:05:34,394 - INFO -     Processed and renamed to: SYN6_Bmin_Tino New sequenz No 1.wav
+2024-10-21 20:05:34,396 - INFO -     Processed and renamed to: SYN7_Bmin_Tino New sequenz No 3.wav
+2024-10-21 20:05:34,398 - INFO -     Processed and renamed to: SYN8_Bmin_sequenz.wav
+2024-10-21 20:05:34,400 - INFO -     Processed and renamed to: SYN9_F#min_Tino New Shaker No 1.wav
+2024-10-21 20:05:34,402 - INFO -     Processed and renamed to: SYN10_C#maj_Tino Atonal 4.wav
+2024-10-21 20:05:34,405 - INFO -     Processed and renamed to: SYN11_C#min_Tino Atonal 2.wav
+2024-10-21 20:05:34,406 - INFO -     Processed and renamed to: SYN12_C#min_bleepy loop.wav
+2024-10-21 20:05:34,408 - INFO -     Processed and renamed to: SYN13_Abmin_Tino New sequence No 7.wav
+2024-10-21 20:05:34,410 - INFO -     Processed and renamed to: SYN14_Abmin_Tino New sequenz No 4.wav
+2024-10-21 20:05:34,415 - INFO -     Processed and renamed to: SYN15_Bbmin_6th Loop.wav
+2024-10-21 20:05:34,417 - INFO -     Processed and renamed to: SYN16_Bbmin_Tino New sequenz No 2.wav
+2024-10-21 20:05:34,454 - INFO -     Processed and renamed to: SYN17_Fmaj_BreezeFM SYN.wav
+2024-10-21 20:05:34,457 - INFO -     Processed and renamed to: SYN18_Fmaj_Tino Atonal 1.wav
+2024-10-21 20:05:34,464 - INFO -     Processed and renamed to: SYN19_Fmaj_Tino New sequence No 6.wav
+2024-10-21 20:05:34,466 - INFO -     Processed and renamed to: SYN20_Fmin_Tino Atonal 3.wav
+2024-10-21 20:05:34,466 - INFO - 
+Processing folder: TOP
+2024-10-21 20:05:34,473 - INFO -     Processed and renamed to: T1_06 AT Hypnosis Top - Modular 137.wav
+2024-10-21 20:05:34,480 - INFO -     Processed and renamed to: T2_07 AT Hypnosis Top - Line 137.wav
+2024-10-21 20:05:34,487 - INFO -     Processed and renamed to: T3_11 AT Hypnosis Top - Fusion 137.wav
+2024-10-21 20:05:34,491 - INFO -     Processed and renamed to: T4_13 AT Hypnosis Top - Turbulence 137 Kopie.wav
+2024-10-21 20:05:34,496 - INFO -     Processed and renamed to: T5_17 AT Hypnosis Top - Steady 137.wav
+2024-10-21 20:05:34,500 - INFO -     Processed and renamed to: T6_19 AT Hypnosis Top - Selector 137.wav
+2024-10-21 20:05:34,504 - INFO -     Processed and renamed to: T7_31 AT Hypnosis Top - Vintage 137.wav
+2024-10-21 20:05:34,508 - INFO -     Processed and renamed to: T8_DVS2 Drumloop.wav
+2024-10-21 20:05:34,510 - INFO -     Processed and renamed to: T9_Drum Loop 2.wav
+2024-10-21 20:05:34,513 - INFO -     Processed and renamed to: T10_Drum Loop Tino.wav
+2024-10-21 20:05:34,520 - INFO -     Processed and renamed to: T11_Drumloop_Lowcut.wav
+2024-10-21 20:05:34,524 - INFO -     Processed and renamed to: T12_Dubhausen_Perc.wav
+2024-10-21 20:05:34,529 - INFO -     Processed and renamed to: T13_Groove12.wav
+2024-10-21 20:05:34,537 - INFO -     Processed and renamed to: T14_Loop 1 - 145 Bpm.wav
+2024-10-21 20:05:34,544 - INFO -     Processed and renamed to: T15_Loop 10 - 145 Bpm.wav
+2024-10-21 20:05:34,552 - INFO -     Processed and renamed to: T16_Loop 11 - 144 Bpm.wav
+2024-10-21 20:05:34,559 - INFO -     Processed and renamed to: T17_Loop 12 - 150 Bpm.wav
+2024-10-21 20:05:34,567 - INFO -     Processed and renamed to: T18_Loop 13 - 145 Bpm.wav
+2024-10-21 20:05:34,574 - INFO -     Processed and renamed to: T19_Loop 14 - 143 Bpm.wav
+2024-10-21 20:05:34,582 - INFO -     Processed and renamed to: T20_Loop 15 - 144 Bpm.wav
+2024-10-21 20:05:34,591 - INFO -     Processed and renamed to: T21_Loop 16 - 146 Bpm.wav
+2024-10-21 20:05:34,598 - INFO -     Processed and renamed to: T22_Loop 17 - 144 Bpm.wav
+2024-10-21 20:05:34,605 - INFO -     Processed and renamed to: T23_Loop 18 - 147 Bpm.wav
+2024-10-21 20:05:34,613 - INFO -     Processed and renamed to: T24_Loop 19 - 145 Bpm.wav
+2024-10-21 20:05:34,620 - INFO -     Processed and renamed to: T25_Loop 2 - 142 Bpm.wav
+2024-10-21 20:05:34,629 - INFO -     Processed and renamed to: T26_Loop 20 - 144 Bpm.wav
+2024-10-21 20:05:34,636 - INFO -     Processed and renamed to: T27_Loop 3 - 144 Bpm.wav
+2024-10-21 20:05:34,644 - INFO -     Processed and renamed to: T28_Loop 4 - 144 Bpm.wav
+2024-10-21 20:05:34,651 - INFO -     Processed and renamed to: T29_Loop 5 - 148 Bpm.wav
+2024-10-21 20:05:34,659 - INFO -     Processed and renamed to: T30_Loop 6 - 142 Bpm.wav
+2024-10-21 20:05:34,667 - INFO -     Processed and renamed to: T31_Loop 7 - 142 Bpm.wav
+2024-10-21 20:05:34,675 - INFO -     Processed and renamed to: T32_Loop 8 - 142 Bpm.wav
+2024-10-21 20:05:34,682 - INFO -     Processed and renamed to: T33_Loop 9 - 142 Bpm.wav
+2024-10-21 20:05:34,794 - INFO -     Processed and renamed to: T34_Offbeat Shaper Hihats 140BPM.aif
+2024-10-21 20:05:34,897 - INFO -     Processed and renamed to: T35_PE_140_Loop_07_Shaker [2023-03-18 133027].aif
+2024-10-21 20:05:35,013 - INFO -     Processed and renamed to: T36_Selenity Stems 2-Pigments [2023-03-23 155423].aif
+2024-10-21 20:05:35,021 - INFO -     Processed and renamed to: T37_Water Drums.wav
+2024-10-21 20:05:35,024 - INFO -     Processed and renamed to: T38_Zugfahrt Perc.wav
+2024-10-21 20:05:35,024 - INFO - 
+Processing folder: TRIBE
+2024-10-21 20:05:35,036 - INFO -     Processed and renamed to: TRB1_Affekt Latin.wav
+2024-10-21 20:05:35,043 - INFO -     Processed and renamed to: TRB2_Groove10.wav
+2024-10-21 20:05:35,050 - INFO -     Processed and renamed to: TRB3_Groove3.wav
+2024-10-21 20:05:35,053 - INFO -     Processed and renamed to: TRB4_Groove6.wav
+2024-10-21 20:05:35,059 - INFO -     Processed and renamed to: TRB5_Groove7.wav
+2024-10-21 20:05:35,062 - INFO -     Processed and renamed to: TRB6_Groove8.wav
+2024-10-21 20:05:35,066 - INFO -     Processed and renamed to: TRB7_Groove9.wav
+2024-10-21 20:05:35,071 - INFO -     Processed and renamed to: TRB8_Loop 18.wav
+2024-10-21 20:05:35,080 - INFO -     Processed and renamed to: TRB9_Loop 18 - 147 Bpm.wav
+2024-10-21 20:05:35,083 - INFO -     Processed and renamed to: TRB10_Loop 20 - 142 BPM.wav
+2024-10-21 20:05:35,093 - INFO -     Processed and renamed to: TRB11_Loop 20 - 144 Bpm.wav
+2024-10-21 20:05:35,096 - INFO -     Processed and renamed to: TRB12_Loop 9 - 142 BPM.wav
+2024-10-21 20:05:35,099 - INFO -     Processed and renamed to: TRB13_Loop Tribal.wav
+2024-10-21 20:05:35,102 - INFO -     Processed and renamed to: TRB14_Tribe + Clap 1.wav
+2024-10-21 20:05:35,107 - INFO -     Processed and renamed to: TRB15_Tribe 10 str8.wav
+2024-10-21 20:05:35,111 - INFO -     Processed and renamed to: TRB16_Tribe 14.wav
+2024-10-21 20:05:35,115 - INFO -     Processed and renamed to: TRB17_Tribe 16.wav
+2024-10-21 20:05:35,119 - INFO -     Processed and renamed to: TRB18_Tribe 18 str8.wav
+2024-10-21 20:05:35,123 - INFO -     Processed and renamed to: TRB19_Tribe 20.wav
+2024-10-21 20:05:35,127 - INFO -     Processed and renamed to: TRB20_Tribe 21.wav
+2024-10-21 20:05:35,132 - INFO -     Processed and renamed to: TRB21_Tribe 22.wav
+2024-10-21 20:05:35,135 - INFO -     Processed and renamed to: TRB22_Tribe 24.wav
+2024-10-21 20:05:35,139 - INFO -     Processed and renamed to: TRB23_Tribe 25.wav
+2024-10-21 20:05:35,144 - INFO -     Processed and renamed to: TRB24_Tribe 25 str8.wav
+2024-10-21 20:05:35,147 - INFO -     Processed and renamed to: TRB25_Tribe 26.wav
+2024-10-21 20:05:35,151 - INFO -     Processed and renamed to: TRB26_Tribe 28.wav
+2024-10-21 20:05:35,154 - INFO -     Processed and renamed to: TRB27_Tribe 29.wav
+2024-10-21 20:05:35,163 - INFO -     Processed and renamed to: TRB28_Tribe 3.wav
+2024-10-21 20:05:35,167 - INFO -     Processed and renamed to: TRB29_Tribe 7.wav
+2024-10-21 20:05:35,172 - INFO -     Processed and renamed to: TRB30_Tribe 7 str8.wav
+2024-10-21 20:05:35,175 - INFO -     Processed and renamed to: TRB31_Tribe 8 str8.wav
+2024-10-21 20:05:35,178 - INFO -     Processed and renamed to: TRB32_Vengeance.wav
+2024-10-21 20:05:35,178 - INFO - 
+Processing folder: VOX
+2024-10-21 20:05:35,181 - INFO -     Processed and renamed to: V1_Affekt Vocals.wav
+2024-10-21 20:05:35,351 - INFO -     Processed and renamed to: V2_Barker Vocal Pad.aif
+2024-10-21 20:05:35,379 - INFO -     Processed and renamed to: V3_Cousine.wav
+2024-10-21 20:05:35,387 - INFO -     Processed and renamed to: V4_Inject Vocals.wav
+2024-10-21 20:05:35,415 - INFO -     Processed and renamed to: V5_Mirror Of Confession Vocals.wav
+2024-10-21 20:05:35,530 - INFO -     Processed and renamed to: V6_Permission Vocal.aif
+2024-10-21 20:05:35,535 - INFO -     Processed and renamed to: V7_Relief Vocal Ye.wav
+2024-10-21 20:05:35,647 - INFO -     Processed and renamed to: V8_Sine Chord Vocal.aif
+2024-10-21 20:05:35,653 - INFO -     Processed and renamed to: V9_Tino Vocal 1.wav
+2024-10-21 20:05:35,660 - INFO -     Processed and renamed to: V10_Vocal_Come Fuck.wav
+2024-10-21 20:05:35,662 - INFO -     Processed and renamed to: V11_Vocal_JALS.wav
+2024-10-21 20:05:35,675 - INFO -     Processed and renamed to: V12_Water Vox.wav
+2024-10-21 20:05:35,694 - INFO -     Processed and renamed to: V13_diff vocal.wav
+2024-10-21 20:05:35,756 - INFO -     Processed and renamed to: V14_fffvocals.wav
+2024-10-21 20:05:35,763 - INFO -     Processed and renamed to: V15_vinyl aca.wav
+2024-10-21 20:05:35,783 - INFO -     Processed and renamed to: V16_where's the bar vocal.wav
+2024-10-21 20:05:35,785 - INFO - Database saved successfully to /Users/jannikassfalg/coding/Octasort/octasort_db.json.
+2024-10-21 20:05:35,785 - INFO - 
+Processing complete.
+2024-10-21 20:09:37,804 - INFO - Starting octasort with root directory: /Users/jannikassfalg/Music/Octa -3/Lehmann/AUDIO/LIVESET Ulm Kopie
+2024-10-21 20:09:37,805 - INFO - Loaded database from /Users/jannikassfalg/coding/Octasort/octasort_db.json.
+2024-10-21 20:09:37,805 - INFO - 
+Processing folder: BASS
+2024-10-21 20:09:38,178 - INFO -     Processed without renaming: B1_Cmin_28 AT Hypnosis Bass - Version 137 C.wav
+2024-10-21 20:09:38,183 - INFO -     Processed without renaming: B2_Cmin_89 SMPERCBOUNCE.wav
+2024-10-21 20:09:38,186 - INFO -     Processed without renaming: B3_Cmin_Bassline Sine Melo.wav
+2024-10-21 20:09:38,191 - INFO -     Processed without renaming: B4_Gmaj_14 AT Hypnosis Bass - Bump 137 G.wav
+2024-10-21 20:09:38,197 - INFO -     Processed without renaming: B5_Gmaj_24 AT Hypnosis Bass - Peak 137 G.wav
+2024-10-21 20:09:38,200 - INFO -     Processed without renaming: B6_Gmaj_33 AT Hypnosis Bass - Inverted 137 G.wav
+2024-10-21 20:09:38,204 - INFO -     Processed without renaming: B7_Gmaj_Bassloop G.wav
+2024-10-21 20:09:38,213 - INFO -     Processed without renaming: B8_Gmin_31 AT Hypnosis Bass - Warehouse 137 G.wav
+2024-10-21 20:09:38,228 - INFO -     Processed without renaming: B9_Dmin_Bleep bass.wav
+2024-10-21 20:09:38,233 - INFO -     Processed without renaming: B10_Dmin_Sounddesign Bass.wav
+2024-10-21 20:09:38,241 - INFO -     Processed without renaming: B11_Amaj_13 AT Hypnosis Bass - Dope 137 A.wav
+2024-10-21 20:09:38,241 - INFO -     Processed without renaming: B12_Amin_SM_BASSLINE003_A.wav
+2024-10-21 20:09:38,245 - INFO -     Processed without renaming: B13_Emin_Bass sequence ? Tröster Style.wav
+2024-10-21 20:09:38,250 - INFO -     Processed without renaming: B14_Emin_Bass_Mono.wav
+2024-10-21 20:09:38,253 - INFO -     Processed without renaming: B15_Bmaj_29 AT Hypnosis Bass - False 137 B.wav
+2024-10-21 20:09:38,258 - INFO -     Processed without renaming: B16_Bmaj_909 Toms.wav
+2024-10-21 20:09:38,260 - INFO -     Processed without renaming: B17_Bmaj_Bass Loop Tino.wav
+2024-10-21 20:09:38,262 - INFO -     Processed without renaming: B18_F#min_Bass Loop X.wav
+2024-10-21 20:09:38,266 - INFO -     Processed without renaming: B19_F#min_Dubhausen_Bass.wav
+2024-10-21 20:09:38,457 - INFO -     Processed without renaming: B20_F#min_Sine.aif
+2024-10-21 20:09:38,459 - INFO -     Processed without renaming: B21_C#min_Really good bassline.wav
+2024-10-21 20:09:38,462 - INFO -     Processed without renaming: B22_Abmaj_blabla_bass.wav
+2024-10-21 20:09:38,468 - INFO -     Processed without renaming: B23_Abmin_Bass Rythm.wav
+2024-10-21 20:09:38,474 - INFO -     Processed without renaming: B24_Ebmaj_90s_Bass.wav
+2024-10-21 20:09:38,481 - INFO -     Processed without renaming: B25_Ebmaj_Basssequenz.wav
+2024-10-21 20:09:38,486 - INFO -     Processed without renaming: B26_Bbmaj_07 AT Hypnosis Bass - Glider 137 F#.wav
+2024-10-21 20:09:38,489 - INFO -     Processed without renaming: B27_Bbmin_Funky Bass.wav
+2024-10-21 20:09:38,493 - INFO -     Processed without renaming: B28_Fmaj_Bass Loop 5.wav
+2024-10-21 20:09:38,497 - INFO -     Processed without renaming: B29_Fmaj_Basstom.wav
+2024-10-21 20:09:38,500 - INFO -     Processed without renaming: B30_Fmin_Bassline Watson.wav
+2024-10-21 20:09:38,500 - INFO - 
+Processing folder: CHORD
+2024-10-21 20:09:39,164 - INFO -     Processed without renaming: C1_Cmin_06 AT Hypnosis Chord - Klock 137 Cm.wav
+2024-10-21 20:09:39,166 - INFO -     Processed without renaming: C2_Cmin_08 AT Hypnosis Chord - Damage 137 Dm.wav
+2024-10-21 20:09:39,171 - INFO -     Processed without renaming: C3_Cmin_14 AT Hypnosis Chord - Waldorf 137 Cm.wav
+2024-10-21 20:09:39,178 - INFO -     Processed without renaming: C4_Cmin_Chord Loop Dub.wav
+2024-10-21 20:09:39,183 - INFO -     Processed without renaming: C5_Cmin_Midnight Snack.wav
+2024-10-21 20:09:39,189 - INFO -     Processed without renaming: C6_Gmaj_Inject Chord.wav
+2024-10-21 20:09:39,193 - INFO -     Processed without renaming: C7_Gmin_15 AT Hypnosis Chord - Blocked 137 F#.wav
+2024-10-21 20:09:39,198 - INFO -     Processed without renaming: C8_Gmin_21 AT Hypnosis Chord - Atmospheric 137 Gm.wav
+2024-10-21 20:09:39,264 - INFO -     Processed without renaming: C9_Gmin_where's the bar synthline.wav
+2024-10-21 20:09:39,315 - INFO -     Processed without renaming: C10_Amaj_Repair Stuff Chords.wav
+2024-10-21 20:09:39,343 - INFO -     Processed without renaming: C11_Amaj_dublesson chord.wav
+2024-10-21 20:09:39,363 - INFO -     Processed without renaming: C12_Bmin_Affekt Chord.wav
+2024-10-21 20:09:39,372 - INFO -     Processed without renaming: C13_Bmin_FFS Chord Loop 2.wav
+2024-10-21 20:09:39,382 - INFO -     Processed without renaming: C14_Bmin_Piano Loop.wav
+2024-10-21 20:09:39,388 - INFO -     Processed without renaming: C15_F#min_Chord Final.wav
+2024-10-21 20:09:39,391 - INFO -     Processed without renaming: C16_F#min_Chord Loop 4.wav
+2024-10-21 20:09:39,428 - INFO -     Processed without renaming: C17_C#min_Dubhausen_Chord.wav
+2024-10-21 20:09:39,438 - INFO -     Processed without renaming: C18_Abmin_House_Base.wav
+2024-10-21 20:09:39,446 - INFO -     Processed without renaming: C19_Ebmin_Chord Broom.wav
+2024-10-21 20:09:39,459 - INFO -     Processed without renaming: C20_Ebmin_Dub Chordline.wav
+2024-10-21 20:09:39,469 - INFO -     Processed without renaming: C21_Bbmaj_24 AT Hypnosis Chord - Esoteric 137 A#.wav
+2024-10-21 20:09:39,473 - INFO -     Processed without renaming: C22_Fmin_03 AT Hypnosis Chord - Deeper 137 Cm.wav
+2024-10-21 20:09:39,473 - INFO - 
+Processing folder: CP
+2024-10-21 20:09:39,474 - INFO -     Processed without renaming: CP1_- 91 Clap A.wav
+2024-10-21 20:09:39,475 - INFO -     Processed without renaming: CP2_- 92 Clap B.wav
+2024-10-21 20:09:39,480 - INFO -     Processed without renaming: CP3_- 93 Clap C.wav
+2024-10-21 20:09:39,491 - INFO -     Processed without renaming: CP4_Clap 1.wav
+2024-10-21 20:09:39,492 - INFO -     Processed without renaming: CP5_Clap Filtered.wav
+2024-10-21 20:09:39,504 - INFO -     Processed without renaming: CP6_Clap Loop.wav
+2024-10-21 20:09:39,505 - INFO -     Processed without renaming: CP7_Clap707.wav
+2024-10-21 20:09:39,516 - INFO -     Processed without renaming: CP8_Sesh Gmünd 5-Instrument Rack.wav
+2024-10-21 20:09:39,518 - INFO -     Processed without renaming: CP9_Skee Clap 909 [2024-09-28 160200].wav
+2024-10-21 20:09:39,518 - INFO - 
+Processing folder: FX
+2024-10-21 20:09:40,936 - INFO -     Processed without renaming: FX1_Cmaj_FX 5.wav
+2024-10-21 20:09:40,939 - INFO -     Processed without renaming: FX2_Cmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 22 SM_FXLOWTEXTURE.wav
+2024-10-21 20:09:40,966 - INFO -     Processed without renaming: FX3_Cmin_FFS Chord FX.wav
+2024-10-21 20:09:40,984 - INFO -     Processed without renaming: FX4_Cmin_FX 3.wav
+2024-10-21 20:09:40,986 - INFO -     Processed without renaming: FX5_Cmin_PHS TEXTURE 13_138.wav
+2024-10-21 20:09:40,993 - INFO -     Processed without renaming: FX6_Cmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 17 SM_FX001.wav
+2024-10-21 20:09:40,998 - INFO -     Processed without renaming: FX7_Cmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 23 SM_FX_SINERISE.wav
+2024-10-21 20:09:41,000 - INFO -     Processed without renaming: FX8_Cmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 67 SM_Atmos.wav
+2024-10-21 20:09:41,004 - INFO -     Processed without renaming: FX9_Cmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 68 SM_Atmos003.wav
+2024-10-21 20:09:41,006 - INFO -     Processed without renaming: FX10_Cmin_fffx.wav
+2024-10-21 20:09:41,010 - INFO -     Processed without renaming: FX11_Gmaj_PHS TEXTURE 18_138.wav
+2024-10-21 20:09:41,015 - INFO -     Processed without renaming: FX12_Gmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 21 SM_FXLOWDROVE.wav
+2024-10-21 20:09:41,019 - INFO -     Processed without renaming: FX13_Gmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 71 SM_Atmosharmony.wav
+2024-10-21 20:09:41,034 - INFO -     Processed without renaming: FX14_Gmin_BreakStuff chord .wav
+2024-10-21 20:09:41,050 - INFO -     Processed without renaming: FX15_Gmin_BreakStuff chord variante 2.wav
+2024-10-21 20:09:41,057 - INFO -     Processed without renaming: FX16_Gmin_Electricity.wav
+2024-10-21 20:09:41,072 - INFO -     Processed without renaming: FX17_Gmin_FX 2.wav
+2024-10-21 20:09:41,086 - INFO -     Processed without renaming: FX18_Gmin_INTRO.wav
+2024-10-21 20:09:41,091 - INFO -     Processed without renaming: FX19_Gmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 19 SM_FX003.wav
+2024-10-21 20:09:41,093 - INFO -     Processed without renaming: FX20_Gmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 70 SM_Atmosglitch001.wav
+2024-10-21 20:09:41,119 - INFO -     Processed without renaming: FX21_Dmaj_Chord FX.wav
+2024-10-21 20:09:41,126 - INFO -     Processed without renaming: FX22_Dmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 26 SM_FX004.wav
+2024-10-21 20:09:41,138 - INFO -     Processed without renaming: FX23_Dmin_PHS TEXTURE 6_138.wav
+2024-10-21 20:09:41,143 - INFO -     Processed without renaming: FX24_Amaj_PHS TEXTURE 17_138.wav
+2024-10-21 20:09:41,153 - INFO -     Processed without renaming: FX25_Amaj_pad.wav
+2024-10-21 20:09:41,163 - INFO -     Processed without renaming: FX26_Amin_PHS TEXTURE 7_138.wav
+2024-10-21 20:09:41,164 - INFO -     Processed without renaming: FX27_Amin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 18 SM_FX002.wav
+2024-10-21 20:09:41,201 - INFO -     Processed without renaming: FX28_Emaj_FX_1.wav
+2024-10-21 20:09:41,203 - INFO -     Processed without renaming: FX29_Emin_New Atmo.wav
+2024-10-21 20:09:41,232 - INFO -     Processed without renaming: FX30_Emin_fff pad.wav
+2024-10-21 20:09:41,247 - INFO -     Processed without renaming: FX31_Bmaj_Machine Junk FX.wav
+2024-10-21 20:09:41,265 - INFO -     Processed without renaming: FX32_Bmaj_atmo.wav
+2024-10-21 20:09:41,279 - INFO -     Processed without renaming: FX33_Bmin_Atmo Pakard.wav
+2024-10-21 20:09:41,282 - INFO -     Processed without renaming: FX34_F#maj_PHS TEXTURE 20_138.wav
+2024-10-21 20:09:41,397 - INFO -     Processed without renaming: FX35_F#maj_Selenity Stems 10-Wavetable [2023-03-23 155724].aif
+2024-10-21 20:09:41,407 - INFO -     Processed without renaming: FX36_F#min_PHS TEXTURE 3_138.wav
+2024-10-21 20:09:41,418 - INFO -     Processed without renaming: FX37_C#maj_Chord FX Loop.wav
+2024-10-21 20:09:41,540 - INFO -     Processed without renaming: FX38_C#min_Selenity Stems 11-Omnisphere [2023-03-23 155751].aif
+2024-10-21 20:09:41,556 - INFO -     Processed without renaming: FX39_Abmaj_FX 1.wav
+2024-10-21 20:09:41,567 - INFO -     Processed without renaming: FX40_Ebmaj_PHS TEXTURE 10_138.wav
+2024-10-21 20:09:41,571 - INFO -     Processed without renaming: FX41_Ebmin_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 25 SM_texture.wav
+2024-10-21 20:09:41,585 - INFO -     Processed without renaming: FX42_Bbmaj_FX 4.wav
+2024-10-21 20:09:41,602 - INFO -     Processed without renaming: FX43_Bbmaj_PHS TEXTURE 8_138.wav
+2024-10-21 20:09:41,610 - INFO -     Processed without renaming: FX44_Bbmin_PHS TEXTURE 19_138.wav
+2024-10-21 20:09:41,619 - INFO -     Processed without renaming: FX45_Bbmin_PHS TEXTURE 2_138.wav
+2024-10-21 20:09:41,629 - INFO -     Processed without renaming: FX46_Bbmin_PHS TEXTURE 9_138.wav
+2024-10-21 20:09:41,639 - INFO -     Processed without renaming: FX47_Fmaj_PHS TEXTURE 5_138.wav
+2024-10-21 20:09:41,648 - INFO -     Processed without renaming: FX48_Fmaj_Sesh Gmünd 10-Omnisphere.wav
+2024-10-21 20:09:41,652 - INFO -     Processed without renaming: FX49_Fmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 20 SM_FXHIGHCRACK.wav
+2024-10-21 20:09:41,656 - INFO -     Processed without renaming: FX50_Fmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 24 SM_FXTAPENOISE001.wav
+2024-10-21 20:09:41,658 - INFO -     Processed without renaming: FX51_Fmaj_Setaoc Mass - Setaoc Mass - Sample Pack vol.1 - 69 SM_Atmosdarkrich.wav
+2024-10-21 20:09:41,666 - INFO -     Processed without renaming: FX52_Fmin_Pad_JALS.wav
+2024-10-21 20:09:41,667 - INFO - 
+Processing folder: HH
+2024-10-21 20:09:41,669 - INFO -     Processed without renaming: HH1_- 31 SM_HHLOOP005.wav
+2024-10-21 20:09:41,676 - INFO -     Processed without renaming: HH2_- 32 SM_HHLOOP006.wav
+2024-10-21 20:09:41,681 - INFO -     Processed without renaming: HH3_- 35 SM_HHLOOP009.wav
+2024-10-21 20:09:41,685 - INFO -     Processed without renaming: HH4_- 37 SM_HHLOOP011.wav
+2024-10-21 20:09:41,686 - INFO -     Processed without renaming: HH5_- 38 SM_RIDELOOP001.wav
+2024-10-21 20:09:41,689 - INFO -     Processed without renaming: HH6_AHH.wav
+2024-10-21 20:09:41,695 - INFO -     Processed without renaming: HH7_Affekt Hihats.wav
+2024-10-21 20:09:41,707 - INFO -     Processed without renaming: HH8_Dirty OH.wav
+2024-10-21 20:09:41,720 - INFO -     Processed without renaming: HH9_Machine Junk Hihats.wav
+2024-10-21 20:09:41,830 - INFO -     Processed without renaming: HH10_hihat loop swing.aif
+2024-10-21 20:09:41,830 - INFO - 
+Processing folder: INTRO
+2024-10-21 20:09:42,083 - INFO -     Processed without renaming: I1_Cmin_timestretch_intro.wav
+2024-10-21 20:09:42,127 - INFO -     Processed without renaming: I2_Amin_Tom Intro.wav
+2024-10-21 20:09:42,151 - INFO -     Processed without renaming: I3_Emin_fffintro_transient compressed.wav
+2024-10-21 20:09:42,151 - INFO - 
+Processing folder: KICK
+2024-10-21 20:09:42,159 - INFO -     Processed and renamed to: K1_JALS.wav
+2024-10-21 20:09:42,163 - INFO -     Processed and renamed to: K2_Kick 10.wav
+2024-10-21 20:09:42,166 - INFO -     Processed and renamed to: K3_Kick 2.wav
+2024-10-21 20:09:42,168 - INFO -     Processed and renamed to: K4_Kick 3.wav
+2024-10-21 20:09:42,172 - INFO -     Processed and renamed to: K5_Kick 4.wav
+2024-10-21 20:09:42,172 - INFO -     Processed and renamed to: K6_Kick 5.wav
+2024-10-21 20:09:42,173 - INFO -     Processed and renamed to: K7_Kick 6.wav
+2024-10-21 20:09:42,174 - INFO -     Processed and renamed to: K8_Kick 9 .wav
+2024-10-21 20:09:42,175 - INFO -     Processed and renamed to: K9_Kick G.wav
+2024-10-21 20:09:42,175 - INFO -     Processed and renamed to: K10_Kick Mende.wav
+2024-10-21 20:09:42,176 - INFO -     Processed and renamed to: K11_Kick2.wav
+2024-10-21 20:09:42,176 - INFO -     Processed without renaming: K12_PHS 909 CLEAN.wav
+2024-10-21 20:09:42,177 - INFO -     Processed without renaming: K13_PHS 909 CLEAN 2.wav
+2024-10-21 20:09:42,178 - INFO -     Processed without renaming: K14_PHS 909 CRUNCHY.wav
+2024-10-21 20:09:42,178 - INFO -     Processed without renaming: K15_PHS 909 DISTO.wav
+2024-10-21 20:09:42,180 - INFO -     Processed without renaming: K16_PHS 909 TAPE 1.wav
+2024-10-21 20:09:42,182 - INFO -     Processed without renaming: K17_PHS 909 TAPE 2.wav
+2024-10-21 20:09:42,183 - INFO -     Processed without renaming: K18_PHS 909 TAPE 3.wav
+2024-10-21 20:09:42,183 - INFO -     Processed without renaming: K19_PHS 909 TAPE 4.wav
+2024-10-21 20:09:42,184 - INFO -     Processed without renaming: K20_PHS BOOMY.wav
+2024-10-21 20:09:42,184 - INFO -     Processed without renaming: K21_PHS TAPE.wav
+2024-10-21 20:09:42,187 - INFO -     Processed without renaming: K22_Pakard Kick.wav
+2024-10-21 20:09:42,195 - INFO -     Processed without renaming: K23_Short 808 Loop.wav
+2024-10-21 20:09:42,195 - INFO - 
+Processing folder: SYN
+2024-10-21 20:09:42,565 - INFO -     Processed without renaming: SYN1_Gmaj_Synth.wav
+2024-10-21 20:09:42,573 - INFO -     Processed without renaming: SYN2_Gmin_Machine Junk Groove.wav
+2024-10-21 20:09:42,577 - INFO -     Processed without renaming: SYN3_Emin_Relief_Synth.wav
+2024-10-21 20:09:42,580 - INFO -     Processed without renaming: SYN4_Bmin_Mohem groove.wav
+2024-10-21 20:09:42,582 - INFO -     Processed without renaming: SYN5_Bmin_Tino New Sequenz No 5.wav
+2024-10-21 20:09:42,586 - INFO -     Processed without renaming: SYN6_Bmin_Tino New sequenz No 1.wav
+2024-10-21 20:09:42,588 - INFO -     Processed without renaming: SYN7_Bmin_Tino New sequenz No 3.wav
+2024-10-21 20:09:42,592 - INFO -     Processed without renaming: SYN8_Bmin_sequenz.wav
+2024-10-21 20:09:42,599 - INFO -     Processed and renamed to: SYN9_F#maj_Tino New Shaker No 1.wav
+2024-10-21 20:09:42,602 - INFO -     Processed without renaming: SYN10_C#maj_Tino Atonal 4.wav
+2024-10-21 20:09:42,607 - INFO -     Processed without renaming: SYN11_C#min_Tino Atonal 2.wav
+2024-10-21 20:09:42,608 - INFO -     Processed without renaming: SYN12_C#min_bleepy loop.wav
+2024-10-21 20:09:42,611 - INFO -     Processed without renaming: SYN13_Abmin_Tino New sequence No 7.wav
+2024-10-21 20:09:42,614 - INFO -     Processed without renaming: SYN14_Abmin_Tino New sequenz No 4.wav
+2024-10-21 20:09:42,618 - INFO -     Processed without renaming: SYN15_Bbmin_6th Loop.wav
+2024-10-21 20:09:42,624 - INFO -     Processed without renaming: SYN16_Bbmin_Tino New sequenz No 2.wav
+2024-10-21 20:09:42,661 - INFO -     Processed without renaming: SYN17_Fmaj_BreezeFM SYN.wav
+2024-10-21 20:09:42,672 - INFO -     Processed without renaming: SYN18_Fmaj_Tino Atonal 1.wav
+2024-10-21 20:09:42,683 - INFO -     Processed without renaming: SYN19_Fmaj_Tino New sequence No 6.wav
+2024-10-21 20:09:42,691 - INFO -     Processed without renaming: SYN20_Fmin_Tino Atonal 3.wav
+2024-10-21 20:09:42,691 - INFO - 
+Processing folder: TOP
+2024-10-21 20:09:42,704 - INFO -     Processed without renaming: T1_06 AT Hypnosis Top - Modular 137.wav
+2024-10-21 20:09:42,712 - INFO -     Processed without renaming: T2_07 AT Hypnosis Top - Line 137.wav
+2024-10-21 20:09:42,716 - INFO -     Processed without renaming: T3_11 AT Hypnosis Top - Fusion 137.wav
+2024-10-21 20:09:42,725 - INFO -     Processed without renaming: T4_13 AT Hypnosis Top - Turbulence 137 Kopie.wav
+2024-10-21 20:09:42,830 - INFO -     Processed and renamed to: T5_140_Loop_07_Shaker [2023-03-18 133027].aif
+2024-10-21 20:09:42,833 - INFO -     Processed and renamed to: T6_17 AT Hypnosis Top - Steady 137.wav
+2024-10-21 20:09:42,837 - INFO -     Processed and renamed to: T7_19 AT Hypnosis Top - Selector 137.wav
+2024-10-21 20:09:42,842 - INFO -     Processed and renamed to: T8_31 AT Hypnosis Top - Vintage 137.wav
+2024-10-21 20:09:42,846 - INFO -     Processed and renamed to: T9_DVS2 Drumloop.wav
+2024-10-21 20:09:42,851 - INFO -     Processed and renamed to: T10_Drum Loop 2.wav
+2024-10-21 20:09:42,854 - INFO -     Processed and renamed to: T11_Drum Loop Tino.wav
+2024-10-21 20:09:42,857 - INFO -     Processed and renamed to: T12_Groove12.wav
+2024-10-21 20:09:42,867 - INFO -     Processed and renamed to: T13_Loop 1 - 145 Bpm.wav
+2024-10-21 20:09:42,875 - INFO -     Processed and renamed to: T14_Loop 10 - 145 Bpm.wav
+2024-10-21 20:09:42,883 - INFO -     Processed and renamed to: T15_Loop 11 - 144 Bpm.wav
+2024-10-21 20:09:42,889 - INFO -     Processed and renamed to: T16_Loop 12 - 150 Bpm.wav
+2024-10-21 20:09:42,898 - INFO -     Processed and renamed to: T17_Loop 13 - 145 Bpm.wav
+2024-10-21 20:09:42,907 - INFO -     Processed and renamed to: T18_Loop 14 - 143 Bpm.wav
+2024-10-21 20:09:42,916 - INFO -     Processed and renamed to: T19_Loop 15 - 144 Bpm.wav
+2024-10-21 20:09:42,924 - INFO -     Processed and renamed to: T20_Loop 16 - 146 Bpm.wav
+2024-10-21 20:09:42,932 - INFO -     Processed and renamed to: T21_Loop 17 - 144 Bpm.wav
+2024-10-21 20:09:42,942 - INFO -     Processed and renamed to: T22_Loop 18 - 147 Bpm.wav
+2024-10-21 20:09:42,951 - INFO -     Processed and renamed to: T23_Loop 19 - 145 Bpm.wav
+2024-10-21 20:09:42,960 - INFO -     Processed and renamed to: T24_Loop 2 - 142 Bpm.wav
+2024-10-21 20:09:42,968 - INFO -     Processed and renamed to: T25_Loop 20 - 144 Bpm.wav
+2024-10-21 20:09:42,976 - INFO -     Processed and renamed to: T26_Loop 3 - 144 Bpm.wav
+2024-10-21 20:09:42,984 - INFO -     Processed and renamed to: T27_Loop 4 - 144 Bpm.wav
+2024-10-21 20:09:42,993 - INFO -     Processed and renamed to: T28_Loop 5 - 148 Bpm.wav
+2024-10-21 20:09:43,000 - INFO -     Processed and renamed to: T29_Loop 6 - 142 Bpm.wav
+2024-10-21 20:09:43,009 - INFO -     Processed and renamed to: T30_Loop 7 - 142 Bpm.wav
+2024-10-21 20:09:43,017 - INFO -     Processed and renamed to: T31_Loop 8 - 142 Bpm.wav
+2024-10-21 20:09:43,026 - INFO -     Processed and renamed to: T32_Loop 9 - 142 Bpm.wav
+2024-10-21 20:09:43,052 - INFO -     Processed and renamed to: T33_Lowcut.wav
+2024-10-21 20:09:43,164 - INFO -     Processed without renaming: T34_Offbeat Shaper Hihats 140BPM.aif
+2024-10-21 20:09:43,167 - INFO -     Processed and renamed to: T35_Perc.wav
+2024-10-21 20:09:43,283 - INFO -     Processed without renaming: T36_Selenity Stems 2-Pigments [2023-03-23 155423].aif
+2024-10-21 20:09:43,291 - INFO -     Processed without renaming: T37_Water Drums.wav
+2024-10-21 20:09:43,295 - INFO -     Processed without renaming: T38_Zugfahrt Perc.wav
+2024-10-21 20:09:43,295 - INFO - 
+Processing folder: TRIBE
+2024-10-21 20:09:43,311 - INFO -     Processed without renaming: TRB1_Affekt Latin.wav
+2024-10-21 20:09:43,319 - INFO -     Processed without renaming: TRB2_Groove10.wav
+2024-10-21 20:09:43,323 - INFO -     Processed without renaming: TRB3_Groove3.wav
+2024-10-21 20:09:43,329 - INFO -     Processed without renaming: TRB4_Groove6.wav
+2024-10-21 20:09:43,333 - INFO -     Processed without renaming: TRB5_Groove7.wav
+2024-10-21 20:09:43,338 - INFO -     Processed without renaming: TRB6_Groove8.wav
+2024-10-21 20:09:43,342 - INFO -     Processed without renaming: TRB7_Groove9.wav
+2024-10-21 20:09:43,348 - INFO -     Processed without renaming: TRB8_Loop 18.wav
+2024-10-21 20:09:43,356 - INFO -     Processed without renaming: TRB9_Loop 18 - 147 Bpm.wav
+2024-10-21 20:09:43,360 - INFO -     Processed without renaming: TRB10_Loop 20 - 142 BPM.wav
+2024-10-21 20:09:43,370 - INFO -     Processed without renaming: TRB11_Loop 20 - 144 Bpm.wav
+2024-10-21 20:09:43,373 - INFO -     Processed without renaming: TRB12_Loop 9 - 142 BPM.wav
+2024-10-21 20:09:43,378 - INFO -     Processed without renaming: TRB13_Loop Tribal.wav
+2024-10-21 20:09:43,383 - INFO -     Processed without renaming: TRB14_Tribe + Clap 1.wav
+2024-10-21 20:09:43,389 - INFO -     Processed without renaming: TRB15_Tribe 10 str8.wav
+2024-10-21 20:09:43,393 - INFO -     Processed without renaming: TRB16_Tribe 14.wav
+2024-10-21 20:09:43,398 - INFO -     Processed without renaming: TRB17_Tribe 16.wav
+2024-10-21 20:09:43,401 - INFO -     Processed without renaming: TRB18_Tribe 18 str8.wav
+2024-10-21 20:09:43,405 - INFO -     Processed without renaming: TRB19_Tribe 20.wav
+2024-10-21 20:09:43,409 - INFO -     Processed without renaming: TRB20_Tribe 21.wav
+2024-10-21 20:09:43,414 - INFO -     Processed without renaming: TRB21_Tribe 22.wav
+2024-10-21 20:09:43,417 - INFO -     Processed without renaming: TRB22_Tribe 24.wav
+2024-10-21 20:09:43,422 - INFO -     Processed without renaming: TRB23_Tribe 25.wav
+2024-10-21 20:09:43,426 - INFO -     Processed without renaming: TRB24_Tribe 25 str8.wav
+2024-10-21 20:09:43,431 - INFO -     Processed without renaming: TRB25_Tribe 26.wav
+2024-10-21 20:09:43,436 - INFO -     Processed without renaming: TRB26_Tribe 28.wav
+2024-10-21 20:09:43,439 - INFO -     Processed without renaming: TRB27_Tribe 29.wav
+2024-10-21 20:09:43,448 - INFO -     Processed without renaming: TRB28_Tribe 3.wav
+2024-10-21 20:09:43,452 - INFO -     Processed without renaming: TRB29_Tribe 7.wav
+2024-10-21 20:09:43,456 - INFO -     Processed without renaming: TRB30_Tribe 7 str8.wav
+2024-10-21 20:09:43,459 - INFO -     Processed without renaming: TRB31_Tribe 8 str8.wav
+2024-10-21 20:09:43,465 - INFO -     Processed without renaming: TRB32_Vengeance.wav
+2024-10-21 20:09:43,465 - INFO - 
+Processing folder: VOX
+2024-10-21 20:09:43,468 - INFO -     Processed without renaming: V1_Affekt Vocals.wav
+2024-10-21 20:09:43,610 - INFO -     Processed without renaming: V2_Barker Vocal Pad.aif
+2024-10-21 20:09:43,625 - INFO -     Processed and renamed to: V3_Come Fuck.wav
+2024-10-21 20:09:43,653 - INFO -     Processed and renamed to: V4_Cousine.wav
+2024-10-21 20:09:43,660 - INFO -     Processed and renamed to: V5_Inject Vocals.wav
+2024-10-21 20:09:43,665 - INFO -     Processed and renamed to: V6_JALS.wav
+2024-10-21 20:09:43,692 - INFO -     Processed and renamed to: V7_Mirror Of Confession Vocals.wav
+2024-10-21 20:09:43,802 - INFO -     Processed and renamed to: V8_Permission Vocal.aif
+2024-10-21 20:09:43,807 - INFO -     Processed and renamed to: V9_Relief Vocal Ye.wav
+2024-10-21 20:09:43,916 - INFO -     Processed and renamed to: V10_Sine Chord Vocal.aif
+2024-10-21 20:09:43,921 - INFO -     Processed and renamed to: V11_Tino Vocal 1.wav
+2024-10-21 20:09:43,936 - INFO -     Processed without renaming: V12_Water Vox.wav
+2024-10-21 20:09:43,952 - INFO -     Processed without renaming: V13_diff vocal.wav
+2024-10-21 20:09:44,013 - INFO -     Processed without renaming: V14_fffvocals.wav
+2024-10-21 20:09:44,020 - INFO -     Processed without renaming: V15_vinyl aca.wav
+2024-10-21 20:09:44,035 - INFO -     Processed without renaming: V16_where's the bar vocal.wav
+2024-10-21 20:09:44,043 - INFO - Database saved successfully to /Users/jannikassfalg/coding/Octasort/octasort_db.json.
+2024-10-21 20:09:44,043 - INFO - 
+Processing complete.
