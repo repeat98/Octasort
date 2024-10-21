@@ -61,7 +61,7 @@ Before installing OctaSort, ensure that your system meets the following requirem
    **`requirements.txt`** should include:
 
    ```plaintext
-   numpy
+   numpy==1.26
    pydub
    essentia
    ```
@@ -98,12 +98,12 @@ Suppose you have a directory structure like:
 ```
 /SampleLibrary
 ├── Descriptor1
-│   ├── song1.mp3
-│   ├── song2.wav
+│   ├── sample1.mp3
+│   ├── sample2.wav
 │   └── ...
 ├── Descriptor2
-│   ├── track1.flac
-│   ├── track2.ogg
+│   ├── sample3.flac
+│   ├── sanple4.ogg
 │   └── ...
 └── ...
 ```
